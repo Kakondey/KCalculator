@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kakondey701.kd.kcalculator.Calculator">
+
+    <EditText
+        android:id="@+id/textField"
+        android:layout_width="355dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:gravity="right"
+        android:keepScreenOn="false"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/textField"
+        android:layout_below="@+id/textField"
+        android:layout_marginTop="24dp"
+        android:text="C"
+        android:textColor="#303f5d"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/clear"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/clear"
+        android:text="del"
+        android:elevation="12dp"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/delete"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/delete"
+        android:text="/"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/textField"
+        android:layout_alignTop="@+id/divide"
+        android:text="X"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/multiply"
+        android:layout_below="@+id/multiply"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/subtract"
+        android:layout_below="@+id/subtract"
+        android:text="+"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="80dp"
+        android:layout_height="140dp"
+        android:layout_alignStart="@+id/addition"
+        android:layout_below="@+id/addition"
+        android:background="#FFEBD61A"
+        android:text="="
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/divide"
+        android:layout_below="@+id/divide"
+        android:text="9"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/delete"
+        android:layout_toStartOf="@+id/divide"
+        android:text="8"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/clear"
+        android:layout_toStartOf="@+id/delete"
+        android:text="7"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/nine"
+        android:layout_below="@+id/nine"
+        android:text="6"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/eight"
+        android:layout_below="@+id/eight"
+        android:text="5"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/seven"
+        android:layout_below="@+id/seven"
+        android:text="4"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/six"
+        android:layout_below="@+id/six"
+        android:text="3"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/five"
+        android:layout_below="@+id/five"
+        android:text="2"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/four"
+        android:layout_below="@+id/four"
+        android:text="1"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/decimal"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/three"
+        android:layout_below="@+id/three"
+        android:text="."
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/two"
+        android:layout_below="@+id/two"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/percentage"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/one"
+        android:layout_below="@+id/one"
+        android:text="%"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+</android.widget.RelativeLayout>
